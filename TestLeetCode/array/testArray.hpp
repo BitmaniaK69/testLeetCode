@@ -25,17 +25,16 @@ namespace test_array
         }
         return len;
     }
-   
+
     int removeDuplicates2(vector<int>& nums) {
         if (nums.empty()) return 0;
         auto j = 0;
-        for (auto i = 1; i < nums.size(); )
+        for (auto i = 1; i < nums.size(); ++i)
         {
             if (nums[i] != nums[j])
             {
                 nums[++j] = nums[i];
             }
-            ++i;
         }
         return j + 1;
     }
@@ -107,10 +106,40 @@ namespace test_array
     void test_checkMountain()
     {
         //Valid mountain array
- //std::vector<int> arr = { 0, 3, 2, 1 };
-//std::vector<int> arr = { 2, 1 };
+        //std::vector<int> arr = { 0, 3, 2, 1 };
+        //std::vector<int> arr = { 2, 1 };
 
         std::vector<int> arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         cout << (validMountainArray(arr) ? "true" : "false") << endl;
+    }
+
+    //----------------------------------------------------------------------
+    // Replace Elements with Greatest Element on Right Side
+    vector<int> replaceElements(vector<int>& arr) {
+        int i = 0;
+        for (; i < arr.size() - 1; ++i)
+        {
+           auto max = arr[i];
+            for (int j = i + 1; i < arr.size()-1; ++j)
+            {
+                if (max < arr[j])
+                {
+                    max = arr[j];
+                }
+                //arr[j] = max;
+            }
+            arr[i] = max;
+        }
+        arr[i] = -1;
+        return arr;
+    }
+
+    inline void test_replaceElements()
+    {
+        vector<int>  arr = { 17, 18, 5, 4, 6, 1 };
+        auto v = replaceElements(arr);
+        for (int i = 0; i < v.size(); i++)
+            cout << v[i] << endl;
+
     }
 };

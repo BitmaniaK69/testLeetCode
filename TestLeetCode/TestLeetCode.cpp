@@ -49,7 +49,8 @@ auto main() -> int
 
     //test_array::test_removeDuplicates();
     //test_array::test_checkDuplicates();
-    test_array::test_checkMountain();
+    //test_array::test_checkMountain();
+    test_array::test_replaceElements();
 
     return end();
 }
