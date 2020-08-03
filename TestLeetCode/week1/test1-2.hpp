@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <set>
-#include <algorithm>
 #include <map>
 
 using namespace std;
@@ -35,14 +34,14 @@ public:
         static std::set<int> processed = {};
         while (n >= 1)
         {
-            auto val = n % 10;
-            auto val2 = val * val;
+            const auto val = n % 10;
+            const auto val2 = val * val;
             n /= 10;
             sum += val2;
         }
         cout << sum << endl;
         if (sum == 1) return true;
-        if (std::find(processed.begin(), processed.end(), sum) != processed.end())
+        if (processed.find(sum) != processed.end())
         {
             return false;
         }
@@ -52,9 +51,7 @@ public:
 };
 
 
-
-
-void test1_2()
+inline void test1_2()
 {
 
     Solution2 sol;

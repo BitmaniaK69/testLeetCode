@@ -1,11 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <set>
 #include <vector>
 #include <algorithm>
-#include <map>
-#include <unordered_map>
 
 using namespace std;
 
@@ -61,7 +58,7 @@ namespace test1_7
         }
     };
 
-    void test()
+    inline void test()
     {
         Solution sol;
         {

@@ -30,36 +30,7 @@ namespace test2_4
         TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
         TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
     };
-    /*
-     class Solution {
-   public:
-        int diameterCount(TreeNode* root, int total, int& maxval) {
-               if (root != nullptr)
-               {
-                   ++total;
-                   maxval = max(maxval, total);
-                   return max(maxval, max(diameterCount(root->left, total, maxval) , diameterCount(root->right, total, maxval)));
-               }
-               maxval = max(maxval, total);
-               return total;
-           }
-
-           int diameterOfBinaryTree(TreeNode* root) {
-               int total = 0;
-               int maxval = 0;
-                diameterCount(root, total, maxval);
-                return maxval-1;
-           }
-
-   };*/
-   /*
-     if (node == null) return 0;
-             int L = depth(node.left);
-             int R = depth(node.right);
-             ans = Math.max(ans, L + R + 1);
-             return Math.max(L, R) + 1;
-    */
-
+  
     class Solution {
     public:
 
@@ -81,7 +52,7 @@ namespace test2_4
         }
     };
 
-    void test()
+    inline void test()
     {
         TreeNode t5(5);
         TreeNode t4(4);

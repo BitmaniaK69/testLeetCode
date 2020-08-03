@@ -1,10 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <set>
 #include <vector>
 #include <algorithm>
-#include <map>
 
 /*
  SINGLE NUMBER
@@ -48,7 +46,7 @@ public:
     }
 };
 
-void test1_1()
+inline void test1_1()
 {
     std::vector < int >vals = { 3,3,4,1,2,1,2,5,4 };
     cout << Solution::singleNumber(vals) << endl;

@@ -1,43 +1,57 @@
 // TestLeetCode.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 /******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
+                      Online C++ Compiler.
+       Code, Compile, Run and Debug C++ program online.
 Write your code in this editor and press "Run" button to compile and execute it.
-
 *******************************************************************************/
 #include <iostream>
 
-#include "test1-1.hpp"
-#include "test1-2.hpp"
-#include "test1-3.hpp"
-#include "test1-5.hpp"
-#include "test1-7.hpp"
-#include "test2-1.hpp"
-#include "test2-2.hpp"
-#include "test2-3.hpp"
-#include "test2-4.hpp"
-#include "test2-5.hpp"
+#include "array/testArray.hpp"
+#include "week1/test1-1.hpp"
+#include "week1/test1-2.hpp"
+#include "week1/test1-3.hpp"
+#include "week1/test1-5.hpp"
+#include "week1/test1-7.hpp"
+#include "week2/test2-1.hpp"
+#include "week2/test2-2.hpp"
+#include "week2/test2-3.hpp"
+#include "week2/test2-4.hpp"
+#include "week2/test2-5.hpp"
 
 using namespace std;
 
-int main()
+
+int end()
 {
-    cout << "*** leetcode Test ***" << endl;
+    cout << "*** Press Enter ***" << endl;
+    cin.get();
+    return 0;
+}
+
+void begin()
+{
+    cout << endl << "*** Leetcode Test ***" << endl;
+}
+
+auto main() -> int
+{
+    begin();
     //test1_1();
     //test1_2();
-   // test1_3();
+    //test1_3();
     //test1_5::test();
     //test1_7::test();
 
     //test2_3::test();
     //test2_4::test();
-    test2_5::test();
+    //test2_5::test();
 
-    cout << "*** Press Enter ***" << endl;
-    cin.get();
-    return 0;
+    //test_array::test_removeDuplicates();
+    //test_array::test_checkDuplicates();
+    test_array::test_checkMountain();
+
+    return end();
 }
 
 

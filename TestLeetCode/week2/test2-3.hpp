@@ -1,13 +1,11 @@
 #pragma once
 
 #include <iostream>
-#include <set>
-#include <vector>
 #include <algorithm>
-#include <map>
 #include <unordered_map>
 
 using namespace std;
+
 
 
 /*
@@ -100,7 +98,7 @@ namespace test2_3
      * int param_4 = obj->getMin();
      */
 
-    void test()
+    inline void test()
     {
         MinStack minStack = {};
         minStack.push(-2);

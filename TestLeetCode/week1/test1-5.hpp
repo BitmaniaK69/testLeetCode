@@ -1,10 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <set>
 #include <vector>
 #include <algorithm>
-#include <map>
 #include <unordered_map>
 
 using namespace std;
@@ -52,9 +50,9 @@ namespace test1_5
         }
     };
 
-    void test()
+    inline void test()
     {
-        Solution sol;
+        const Solution sol;
 
         std::vector<string> v = { "eat", "tea", "tan", "ate", "nat", "bat" };
         for (auto w : sol.groupAnagrams(v))

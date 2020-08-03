@@ -1,11 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <set>
-#include <vector>
-#include <algorithm>
-#include <map>
-#include <unordered_map>
 
 using namespace std;
 
@@ -82,7 +77,7 @@ namespace test2_2
         }
     };
 
-    void test()
+    inline void test()
     {
         string S;
         string T;
