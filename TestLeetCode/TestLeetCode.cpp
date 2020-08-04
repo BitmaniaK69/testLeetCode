@@ -8,6 +8,8 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <iostream>
 
 #include "array/testArray.hpp"
+
+#include "recursion/testRecurrence.hpp"
 #include "recursion/testrecursion.hpp"
 #include "week1/test1-1.hpp"
 #include "week1/test1-2.hpp"
@@ -31,29 +33,47 @@ int end()
 
 void begin()
 {
-    cout << endl << "*** Leetcode Test ***" << endl;
+    cout << endl << "*** LeetCode Test ***" << endl;
 }
 
 auto main() -> int
 {
     begin();
+    //------------------
+    // Test Week1
+    //------------------
     //test1_1();
     //test1_2();
     //test1_3();
     //test1_5::test();
     //test1_7::test();
 
+    //------------------
+    // Test Week2
+    //------------------
     //test2_3::test();
     //test2_4::test();
     //test2_5::test();
 
+    //------------------
+    // Test Arrays
+    //------------------
     //test_array::test_removeDuplicates();
     //test_array::test_checkDuplicates();
     //test_array::test_checkMountain();
     //test_array::test_replaceElements();
     //test_array::test_sortArrayByParity();
+
+    //------------------
+    // Test Principle of recursion
+    //------------------
     //test_recursion::test_reverseString();
-    test_recursion::swapNodes::test_swapNodes();
+    //test_recursion::swapNodes::test_swapNodes();
+
+    //------------------
+    // Test Recurrence relation
+    //------------------
+    test_recurrence::reverseList::test_reverseList();
 
     return end();
 }

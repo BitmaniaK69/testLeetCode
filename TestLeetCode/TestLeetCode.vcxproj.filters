@@ -65,7 +65,10 @@
     <ClInclude Include="array\testArray.hpp">
       <Filter>Header Files\arrays</Filter>
     </ClInclude>
-    <ClInclude Include="recursion\testrecursion.hpp">
+    <ClInclude Include="recursion\testRecursion.hpp">
+      <Filter>Header Files\recursion</Filter>
+    </ClInclude>
+    <ClInclude Include="recursion\testRecurrence.hpp">
       <Filter>Header Files\recursion</Filter>
     </ClInclude>
   </ItemGroup>

@@ -8,6 +8,7 @@ using namespace std;
 
 namespace test_recursion
 {
+    //-------------------------------------------------------------------------
     inline void reverser(vector<char>& s, int b, int e)
     {
         if (b < e)
@@ -40,28 +41,17 @@ namespace test_recursion
         cout << endl;
     }
 
-    //------------------------------------------------
-
-    /**
- * Definition for singly-linked list.*/
+    //-------------------------------------------------------------------------
+    /* Definition for singly-linked list.*/
     namespace swapNodes
     {
         struct ListNode
         {
             int val;
             ListNode* next;
-
-            ListNode() : val(0), next(nullptr)
-            {
-            }
-
-            ListNode(int x) : val(x), next(nullptr)
-            {
-            }
-
-            ListNode(int x, ListNode* next) : val(x), next(next)
-            {
-            }
+            ListNode() : val(0), next(nullptr) {}
+            ListNode(int x) : val(x), next(nullptr) {}
+            ListNode(int x, ListNode* next) : val(x), next(next) {}
         };
 
         class Solution
@@ -102,4 +92,5 @@ namespace test_recursion
             cout << endl;
         }
     }
+
 };

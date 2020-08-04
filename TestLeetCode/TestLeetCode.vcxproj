@@ -155,7 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array\testArray.hpp" />
-    <ClInclude Include="recursion\testrecursion.hpp" />
+    <ClInclude Include="recursion\testRecurrence.hpp" />
+    <ClInclude Include="recursion\testRecursion.hpp" />
     <ClInclude Include="week1\test1-1.hpp" />
     <ClInclude Include="week1\test1-2.hpp" />
     <ClInclude Include="week1\test1-3.hpp" />
