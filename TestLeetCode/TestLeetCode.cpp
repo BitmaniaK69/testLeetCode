@@ -8,6 +8,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <iostream>
 
 #include "array/testArray.hpp"
+#include "recursion/testrecursion.hpp"
 #include "week1/test1-1.hpp"
 #include "week1/test1-2.hpp"
 #include "week1/test1-3.hpp"
@@ -50,7 +51,10 @@ auto main() -> int
     //test_array::test_removeDuplicates();
     //test_array::test_checkDuplicates();
     //test_array::test_checkMountain();
-    test_array::test_replaceElements();
+    //test_array::test_replaceElements();
+    //test_array::test_sortArrayByParity();
+    //test_recursion::test_reverseString();
+    test_recursion::swapNodes::test_swapNodes();
 
     return end();
 }

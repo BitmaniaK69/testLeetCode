@@ -48,13 +48,13 @@ namespace test1_7
 {
     class Solution {
     public:
-        static int countElements(const vector<int>& arr)
+        int countElements(const vector<int>& arr)
         {
-            return std::count_if(arr.begin(), arr.end(),
+            return static_cast<int>(std::count_if(arr.begin(), arr.end(),
                 [arr](int i)
                 {
                     return std::find(arr.begin(), arr.end(), i + 1) != arr.end();
-                });
+                }));
         }
     };
 

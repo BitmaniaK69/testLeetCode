@@ -154,16 +154,18 @@
     <ClCompile Include="TestLeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test1-1.hpp" />
-    <ClInclude Include="test1-2.hpp" />
-    <ClInclude Include="test1-3.hpp" />
-    <ClInclude Include="test1-5.hpp" />
-    <ClInclude Include="test1-7.hpp" />
-    <ClInclude Include="test2-1.hpp" />
-    <ClInclude Include="test2-2.hpp" />
-    <ClInclude Include="test2-3.hpp" />
-    <ClInclude Include="test2-4.hpp" />
-    <ClInclude Include="test2-5.hpp" />
+    <ClInclude Include="array\testArray.hpp" />
+    <ClInclude Include="recursion\testrecursion.hpp" />
+    <ClInclude Include="week1\test1-1.hpp" />
+    <ClInclude Include="week1\test1-2.hpp" />
+    <ClInclude Include="week1\test1-3.hpp" />
+    <ClInclude Include="week1\test1-5.hpp" />
+    <ClInclude Include="week1\test1-7.hpp" />
+    <ClInclude Include="week2\test2-1.hpp" />
+    <ClInclude Include="week2\test2-2.hpp" />
+    <ClInclude Include="week2\test2-3.hpp" />
+    <ClInclude Include="week2\test2-4.hpp" />
+    <ClInclude Include="week2\test2-5.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

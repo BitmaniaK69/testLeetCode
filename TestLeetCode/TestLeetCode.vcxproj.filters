@@ -19,6 +19,12 @@
     <Filter Include="Header Files\week2">
       <UniqueIdentifier>{edf38953-ba4b-46e4-8acf-92ab9942af75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\arrays">
+      <UniqueIdentifier>{e1c847e1-69e8-4e54-908c-77e3710eabaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\recursion">
+      <UniqueIdentifier>{fb7537f4-ad20-408f-ba70-e22abf5b941d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestLeetCode.cpp">
@@ -26,35 +32,41 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test1-1.hpp">
+    <ClInclude Include="week1\test1-1.hpp">
       <Filter>Header Files\week1</Filter>
     </ClInclude>
-    <ClInclude Include="test1-2.hpp">
+    <ClInclude Include="week1\test1-2.hpp">
       <Filter>Header Files\week1</Filter>
     </ClInclude>
-    <ClInclude Include="test1-3.hpp">
+    <ClInclude Include="week1\test1-3.hpp">
       <Filter>Header Files\week1</Filter>
     </ClInclude>
-    <ClInclude Include="test1-5.hpp">
+    <ClInclude Include="week1\test1-5.hpp">
       <Filter>Header Files\week1</Filter>
     </ClInclude>
-    <ClInclude Include="test1-7.hpp">
+    <ClInclude Include="week1\test1-7.hpp">
       <Filter>Header Files\week1</Filter>
     </ClInclude>
-    <ClInclude Include="test2-1.hpp">
+    <ClInclude Include="week2\test2-1.hpp">
       <Filter>Header Files\week2</Filter>
     </ClInclude>
-    <ClInclude Include="test2-2.hpp">
+    <ClInclude Include="week2\test2-2.hpp">
       <Filter>Header Files\week2</Filter>
     </ClInclude>
-    <ClInclude Include="test2-3.hpp">
+    <ClInclude Include="week2\test2-3.hpp">
       <Filter>Header Files\week2</Filter>
     </ClInclude>
-    <ClInclude Include="test2-4.hpp">
+    <ClInclude Include="week2\test2-4.hpp">
       <Filter>Header Files\week2</Filter>
     </ClInclude>
-    <ClInclude Include="test2-5.hpp">
+    <ClInclude Include="week2\test2-5.hpp">
       <Filter>Header Files\week2</Filter>
+    </ClInclude>
+    <ClInclude Include="array\testArray.hpp">
+      <Filter>Header Files\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="recursion\testrecursion.hpp">
+      <Filter>Header Files\recursion</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

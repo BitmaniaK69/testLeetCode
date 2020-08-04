@@ -10,7 +10,7 @@ namespace test_array
 {
     //Remove Duplicates in array
     int removeDuplicates(vector<int>& nums) {
-        int len = nums.size();
+        int len = static_cast<int>(nums.size());
         for (int i = 0; i < len - 1; ++i)
         {
             if (nums[i] == nums[i + 1])
@@ -115,14 +115,15 @@ namespace test_array
 
     //----------------------------------------------------------------------
     // Replace Elements with Greatest Element on Right Side
-    vector<int> replaceElements(vector<int>& arr) {
+    vector<int> replaceElements_old(vector<int>& arr) {
         int i = 0;
         for (; i < arr.size() - 1; ++i)
         {
-           auto max = arr[i];
-            for (int j = i + 1; i < arr.size()-1; ++j)
+            const auto i1 = i + 1;
+            auto max = arr[i1];
+            for (int j = i1; j < arr.size(); ++j)
             {
-                if (max < arr[j])
+                if (j > i1&& max < arr[j])
                 {
                     max = arr[j];
                 }
@@ -131,6 +132,18 @@ namespace test_array
             arr[i] = max;
         }
         arr[i] = -1;
+        return arr;
+    }
+    vector<int> replaceElements(vector<int>& arr) {
+        int max = -1;
+        for (auto i = arr.size(); i > 0; --i)
+        {
+            const auto i1 = i - 1;
+            const auto val = arr[i1];
+            arr[i1] = max;
+            if (max < val)
+                max = val;
+        }
         return arr;
     }
 
@@ -142,4 +155,46 @@ namespace test_array
             cout << v[i] << endl;
 
     }
+
+
+    vector<int> sortArrayByParity(vector<int>& A) {
+        if (A.size() <= 1)
+            return A;
+        int j = 0;
+        for (int i = 0; i < A.size(); ++i)
+        {
+            if (A[i] % 2 == 0)
+            {
+                swap(A[i], A[j]);
+                ++j;
+            }
+        }
+        return A;
+        //This works too...
+        /*for (auto v: A)
+        {
+            if (v % 2)
+                odd.emplace_back(v);
+            else
+                even.emplace_back(v);
+        }
+        std::copy(odd.begin(), odd.end(), std::back_inserter(even));
+
+        return even;*/
+    }
+    inline void test_sortArrayByParity()
+    {
+        vector<int>  arr = { 3,1,2,4 };
+        auto v = sortArrayByParity(arr);
+        for (int i = 0; i < v.size(); i++)
+            cout << v[i] << endl;
+
+    }
+
+
+
+    int heightChecker(vector<int>& heights) {
+        return -1;
+    }
+
 };
