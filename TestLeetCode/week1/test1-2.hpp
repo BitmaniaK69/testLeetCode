@@ -5,6 +5,7 @@
 #include <map>
 
 using namespace std;
+
 /*
  HAPPY NUMBER
 
@@ -26,10 +27,11 @@ Explanation:
 
 */
 
-
-class Solution2 {
+class Solution2
+{
 public:
-    bool isHappy(int n) {
+    bool isHappy(int n)
+    {
         int sum = 0;
         static std::set<int> processed = {};
         while (n >= 1)
@@ -50,11 +52,8 @@ public:
     }
 };
 
-
 inline void test1_2()
 {
-
     Solution2 sol;
     cout << (sol.isHappy(13) ? "true" : "false") << endl;
-
 }

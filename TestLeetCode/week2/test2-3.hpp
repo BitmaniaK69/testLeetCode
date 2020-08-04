@@ -6,8 +6,6 @@
 
 using namespace std;
 
-
-
 /*
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
@@ -44,24 +42,31 @@ Methods pop, top and getMin operations will always be called on non-empty stacks
 
 namespace test2_3
 {
-    class MinStack {
+    class MinStack
+    {
     public:
         static const int size = 100;
         /** initialize your data structure here. */
-        MinStack() {
+        MinStack()
+        {
             stack = new int[size];
         }
-        ~MinStack() {
+
+        ~MinStack()
+        {
             delete[] stack;
         }
 
-        void push(int x) {
+        void push(int x)
+        {
             minim = (next >= 0) ? min(x, minim) : x;
             stack[++next] = x;
         }
 
-        void pop() {
-            if (next >= 0) {
+        void pop()
+        {
+            if (next >= 0)
+            {
                 if (stack[next] == minim)
                 {
                     minim = stack[0];
@@ -108,7 +113,5 @@ namespace test2_3
         minStack.pop();
         minStack.top();    // return 0
         minStack.getMin(); // return -2
-
-
     }
 };

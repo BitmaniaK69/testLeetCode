@@ -34,19 +34,19 @@ Note:
 
 namespace test2_5
 {
-    class Solution {
+    class Solution
+    {
     public:
-        int lastStoneWeight(vector<int>& stones) {
+        int lastStoneWeight(vector<int>& stones)
+        {
             return 0;
         }
     };
 
     void test()
     {
-
-        std::vector<int> v = { 2,7,4,1,8,1 };
+        std::vector<int> v = {2, 7, 4, 1, 8, 1};
         Solution sol;
         cout << "lastStoneWeight: " << sol.lastStoneWeight(v) << endl;
-
     }
 };

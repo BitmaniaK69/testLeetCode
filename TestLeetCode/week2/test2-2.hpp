@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 /*
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
@@ -42,10 +41,11 @@ Can you solve it in O(N) time and O(1) space?
 
 namespace test2_2
 {
-
-    class Solution {
+    class Solution
+    {
     public:
-        static bool backspaceCompare(const string& S, const string& T) {
+        static bool backspaceCompare(const string& S, const string& T)
+        {
             string S1;
             string T1;
 

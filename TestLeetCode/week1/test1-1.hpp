@@ -22,23 +22,28 @@ Input: [4,1,2,1,2]
 Output: 4
 */
 
-
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    static int singleNumber(std::vector < int >& nums) {
+    static int singleNumber(std::vector<int>& nums)
+    {
         int res = -1;
         std::sort(nums.begin(), nums.end());
 
-        for (auto n : nums) {
-            if (res == -1) {
+        for (auto n : nums)
+        {
+            if (res == -1)
+            {
                 res = n;
             }
-            else if (n != res && res != -1) {
+            else if (n != res && res != -1)
+            {
                 return res;
             }
-            else {
+            else
+            {
                 res = -1;
             }
         }
@@ -48,8 +53,6 @@ public:
 
 inline void test1_1()
 {
-    std::vector < int >vals = { 3,3,4,1,2,1,2,5,4 };
+    std::vector<int> vals = {3, 3, 4, 1, 2, 1, 2, 5, 4};
     cout << Solution::singleNumber(vals) << endl;
-
 }
-

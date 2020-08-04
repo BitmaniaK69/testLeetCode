@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 /*
 Given an integer array arr, count how many elements x there are, such that x + 1 is also in arr.
 
@@ -46,15 +45,16 @@ Constraints:
 */
 namespace test1_7
 {
-    class Solution {
+    class Solution
+    {
     public:
         int countElements(const vector<int>& arr)
         {
             return static_cast<int>(std::count_if(arr.begin(), arr.end(),
-                [arr](int i)
-                {
-                    return std::find(arr.begin(), arr.end(), i + 1) != arr.end();
-                }));
+                                                  [arr](int i)
+                                                  {
+                                                      return std::find(arr.begin(), arr.end(), i + 1) != arr.end();
+                                                  }));
         }
     };
 
@@ -62,11 +62,11 @@ namespace test1_7
     {
         Solution sol;
         {
-            std::vector<int> arr = { 1, 2, 3 };
+            std::vector<int> arr = {1, 2, 3};
             cout << sol.countElements(arr) << endl;
         }
         {
-            std::vector<int> arr = { 1, 1, 2 };
+            std::vector<int> arr = {1, 1, 2};
             cout << sol.countElements(arr) << endl;
         }
     }

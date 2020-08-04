@@ -9,7 +9,8 @@ using namespace std;
 namespace test_array
 {
     //Remove Duplicates in array
-    int removeDuplicates(vector<int>& nums) {
+    int removeDuplicates(vector<int>& nums)
+    {
         int len = static_cast<int>(nums.size());
         for (int i = 0; i < len - 1; ++i)
         {
@@ -26,7 +27,8 @@ namespace test_array
         return len;
     }
 
-    int removeDuplicates2(vector<int>& nums) {
+    int removeDuplicates2(vector<int>& nums)
+    {
         if (nums.empty()) return 0;
         auto j = 0;
         for (auto i = 1; i < nums.size(); ++i)
@@ -42,7 +44,7 @@ namespace test_array
     void test_removeDuplicates()
     {
         //Remove Duplicates in array
-        std::vector<int> nums = { 0,0,1,1,1,2,2,3,3,4 };
+        std::vector<int> nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int size = removeDuplicates2(nums);
 
         cout << "Duplicates:" << endl;
@@ -52,7 +54,8 @@ namespace test_array
 
     //----------------------------------------------------------------------
     //Checks Duplicates in array
-    bool checkIfExist(vector<int>& arr) {
+    bool checkIfExist(vector<int>& arr)
+    {
         for (auto i = 0; i < arr.size(); ++i)
         {
             for (auto j = i + 1; j < arr.size(); ++j)
@@ -61,17 +64,18 @@ namespace test_array
                 {
                     return true;
                 }
-
             }
         }
         return false;
     }
+
     void test_checkDuplicates()
     {
         //Checks Duplicates in array
-        std::vector<int> arr = { 7,1,14,11 };
+        std::vector<int> arr = {7, 1, 14, 11};
         cout << (checkIfExist(arr) ? "true" : "false") << endl;
     }
+
     //----------------------------------------------------------------------
     //Valid mountain array
     bool validMountainArray(vector<int>& A)
@@ -94,7 +98,7 @@ namespace test_array
         {
             return false;
         }
-        for (; i < A.size() - 1; )
+        for (; i < A.size() - 1;)
         {
             if (A[i] <= A[i + 1])
                 return false;
@@ -103,19 +107,21 @@ namespace test_array
         }
         return true;
     }
+
     void test_checkMountain()
     {
         //Valid mountain array
         //std::vector<int> arr = { 0, 3, 2, 1 };
         //std::vector<int> arr = { 2, 1 };
 
-        std::vector<int> arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        std::vector<int> arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         cout << (validMountainArray(arr) ? "true" : "false") << endl;
     }
 
     //----------------------------------------------------------------------
     // Replace Elements with Greatest Element on Right Side
-    vector<int> replaceElements_old(vector<int>& arr) {
+    vector<int> replaceElements_old(vector<int>& arr)
+    {
         int i = 0;
         for (; i < arr.size() - 1; ++i)
         {
@@ -123,7 +129,7 @@ namespace test_array
             auto max = arr[i1];
             for (int j = i1; j < arr.size(); ++j)
             {
-                if (j > i1&& max < arr[j])
+                if (j > i1 && max < arr[j])
                 {
                     max = arr[j];
                 }
@@ -134,7 +140,9 @@ namespace test_array
         arr[i] = -1;
         return arr;
     }
-    vector<int> replaceElements(vector<int>& arr) {
+
+    vector<int> replaceElements(vector<int>& arr)
+    {
         int max = -1;
         for (auto i = arr.size(); i > 0; --i)
         {
@@ -149,15 +157,14 @@ namespace test_array
 
     inline void test_replaceElements()
     {
-        vector<int>  arr = { 17, 18, 5, 4, 6, 1 };
+        vector<int> arr = {17, 18, 5, 4, 6, 1};
         auto v = replaceElements(arr);
         for (int i = 0; i < v.size(); i++)
             cout << v[i] << endl;
-
     }
 
-
-    vector<int> sortArrayByParity(vector<int>& A) {
+    vector<int> sortArrayByParity(vector<int>& A)
+    {
         if (A.size() <= 1)
             return A;
         int j = 0;
@@ -182,19 +189,17 @@ namespace test_array
 
         return even;*/
     }
+
     inline void test_sortArrayByParity()
     {
-        vector<int>  arr = { 3,1,2,4 };
+        vector<int> arr = {3, 1, 2, 4};
         auto v = sortArrayByParity(arr);
         for (int i = 0; i < v.size(); i++)
             cout << v[i] << endl;
-
     }
 
-
-
-    int heightChecker(vector<int>& heights) {
+    int heightChecker(vector<int>& heights)
+    {
         return -1;
     }
-
 };

@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 /*
 Given an array of strings, group anagrams together.
 
@@ -28,7 +27,8 @@ The order of your output does not matter.
 */
 namespace test1_5
 {
-    class Solution {
+    class Solution
+    {
     public:
         vector<vector<string>> groupAnagrams(vector<string>& strs) const
         {
@@ -43,7 +43,8 @@ namespace test1_5
             }
             res.reserve(anagrams.size());
 
-            for (const auto& x : anagrams) {
+            for (const auto& x : anagrams)
+            {
                 res.push_back(x.second);
             }
             return res;
@@ -54,7 +55,7 @@ namespace test1_5
     {
         const Solution sol;
 
-        std::vector<string> v = { "eat", "tea", "tan", "ate", "nat", "bat" };
+        std::vector<string> v = {"eat", "tea", "tan", "ate", "nat", "bat"};
         for (auto w : sol.groupAnagrams(v))
         {
             for (auto z : w)

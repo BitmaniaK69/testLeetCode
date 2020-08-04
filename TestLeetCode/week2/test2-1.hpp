@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 /*
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.
 
@@ -33,19 +32,30 @@ The number of nodes in the given list will be between 1 and 100.
 
 namespace test2_1
 {
-
     //Definition for singly-linked list.
-    struct ListNode {
+    struct ListNode
+    {
         int val;
         ListNode* next;
-        ListNode() : val(0), next(nullptr) {}
-        ListNode(int x) : val(x), next(nullptr) {}
-        ListNode(int x, ListNode* next) : val(x), next(next) {}
+
+        ListNode() : val(0), next(nullptr)
+        {
+        }
+
+        ListNode(int x) : val(x), next(nullptr)
+        {
+        }
+
+        ListNode(int x, ListNode* next) : val(x), next(next)
+        {
+        }
     };
 
-    class Solution {
+    class Solution
+    {
     public:
-        ListNode* middleNode(ListNode* head) const {
+        ListNode* middleNode(ListNode* head) const
+        {
             ListNode* middle = head;
             bool even = false;
             while (auto* next = head->next)
@@ -74,6 +84,5 @@ namespace test2_1
 
             cout << sol.middleNode(&a1)->val << endl;
         }
-
     }
 };

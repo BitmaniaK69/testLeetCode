@@ -22,7 +22,6 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 using namespace std;
 
-
 int end()
 {
     cout << "*** Press Enter ***" << endl;
@@ -58,7 +57,6 @@ auto main() -> int
 
     return end();
 }
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

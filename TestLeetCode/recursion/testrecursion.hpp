@@ -8,7 +8,8 @@ using namespace std;
 
 namespace test_recursion
 {
-    inline void reverser(vector<char>& s, int b, int e) {
+    inline void reverser(vector<char>& s, int b, int e)
+    {
         if (b < e)
         {
             swap(s[b++], s[e--]);
@@ -16,7 +17,8 @@ namespace test_recursion
         }
     }
 
-    inline void reverseString(vector<char>& s) {
+    inline void reverseString(vector<char>& s)
+    {
         const int end = static_cast<int>(s.size() - 1);
         reverser(s, 0, end);
     }
@@ -38,63 +40,66 @@ namespace test_recursion
         cout << endl;
     }
 
-
-    void test_checkDuplicates()
-    {
-        /*//Checks Duplicates in array
-        std::vector<int> arr = { 7,1,14,11 };
-        cout << (checkIfExist(arr) ? "true" : "false") << endl;*/
-    }
-
     //------------------------------------------------
 
     /**
  * Definition for singly-linked list.*/
-    namespace swapNodes {
-        struct ListNode {
+    namespace swapNodes
+    {
+        struct ListNode
+        {
             int val;
             ListNode* next;
-            ListNode() : val(0), next(nullptr) {}
-            ListNode(int x) : val(x), next(nullptr) {}
-            ListNode(int x, ListNode* next) : val(x), next(next) {}
-        };
 
-        class Solution {
-        public:
-            ListNode* swapPairs(ListNode* head) {
-               // cout << head->val << ends;
-                if (head && head->next)
-                {
-                    swap(head->val, head->next->val);
-                    if (head->next)
-                    {
-                        swapPairs(head->next);
-                    }
-                    
-                }
-                
-                return head;
+            ListNode() : val(0), next(nullptr)
+            {
+            }
+
+            ListNode(int x) : val(x), next(nullptr)
+            {
+            }
+
+            ListNode(int x, ListNode* next) : val(x), next(next)
+            {
             }
         };
 
+        class Solution
+        {
+        public:
+            ListNode* swapPairs(ListNode* head)
+            {
+                if (head && head->next)
+                {
+                    swap(head->val, head->next->val);
+                    if (head->next->next)
+                    {
+                        swapPairs(head->next->next);
+                    }
+                }
+
+                return head;
+            }
+        };
 
         void test_swapNodes()
         {
             Solution sol;
 
             //ListNode arr() = { 1,2,3,4,5 };
-           
+
             ListNode a4(4);
             ListNode a3(3, &a4);
             ListNode a2(2, &a3);
             ListNode a1(1, &a2);
-           sol.swapPairs(&a1);
-           ListNode* n = &a1;
+            sol.swapPairs(&a1);
+            ListNode* n = &a1;
             while (n)
             {
                 cout << n->val << ends;
                 n = n->next;
             }
+            cout << endl;
         }
     }
 };
