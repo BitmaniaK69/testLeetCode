@@ -9,6 +9,8 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include "array/testArray.hpp"
 
+
+#include "recursion/testMemoization.hpp"
 #include "recursion/testRecurrence.hpp"
 #include "recursion/testrecursion.hpp"
 #include "week1/test1-1.hpp"
@@ -39,6 +41,7 @@ void begin()
 auto main() -> int
 {
     begin();
+
     //------------------
     // Test Week1
     //------------------
@@ -73,7 +76,14 @@ auto main() -> int
     //------------------
     // Test Recurrence relation
     //------------------
-    test_recurrence::reverseList::test_reverseList();
+    //test_recurrence::reverseList::test_reverseList();
+    //test_recurrence::searchBST::test_searchBST();
+
+    //------------------
+    // Test Memoization
+    //------------------
+    //test_memoization::test_fibonacci::test_fibonacci();
+    test_memoization::test_climbingstairs::test_climbStairs();
 
     return end();
 }

@@ -77,4 +77,80 @@ namespace test_recurrence
             cout << endl;
         }
     }
+
+
+
+    namespace searchBST
+    {
+        //  Definition for a binary tree node.
+            /*
+             Given the tree:
+                4
+               / \
+              2   7
+             / \
+            1   3
+
+        And the value to search: 2
+             */
+        struct TreeNode {
+            int val;
+            TreeNode* left;
+            TreeNode* right;
+            TreeNode() : val(0), left(nullptr), right(nullptr) {}
+            TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+            TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
+        };
+
+        class Solution {
+        public:
+            TreeNode* searchBST(TreeNode* root, int val) {
+                if (root != nullptr)
+                {
+
+                    if (root->val == val)
+                    {
+                        return root;
+                    }
+                    if (auto* const resL = searchBST(root->left, val))
+                        return resL;
+                    
+                    if (auto* const resR = searchBST(root->right, val))
+                        return resR;
+                }
+                return nullptr;
+            }
+
+
+            void printBST(TreeNode* root) {
+                if (root != nullptr)
+                {
+                    cout << root->val << ends;
+                    printBST(root->left);
+                    printBST(root->right);
+                }
+            }
+
+           
+        };
+
+        inline void test_searchBST()
+        {
+            //Input: 1->2->3->4->5->NULL
+            //Output: 5->4->3->2->1->NULL
+            Solution sol;
+            TreeNode a3(3);
+            TreeNode a1(1);
+            TreeNode a2(2, &a1, &a3);
+            TreeNode a7(7);
+            TreeNode a4(4, &a2, &a7);
+
+
+            TreeNode* n = sol.searchBST(&a4, 2);
+            sol.printBST(n);
+            cout << endl;
+        }
+    }
+
+
 };

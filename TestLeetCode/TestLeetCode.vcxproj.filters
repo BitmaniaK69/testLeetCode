@@ -71,5 +71,8 @@
     <ClInclude Include="recursion\testRecurrence.hpp">
       <Filter>Header Files\recursion</Filter>
     </ClInclude>
+    <ClInclude Include="recursion\testMemoization.hpp">
+      <Filter>Header Files\recursion</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
