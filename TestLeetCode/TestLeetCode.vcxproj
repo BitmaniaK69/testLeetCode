@@ -161,6 +161,7 @@
     <ClInclude Include="bloomberg\test2.hpp" />
     <ClInclude Include="bloomberg\test3.hpp" />
     <ClInclude Include="bloomberg\test4.hpp" />
+    <ClInclude Include="bloomberg\test5.hpp" />
     <ClInclude Include="recursion\testMemoization.hpp" />
     <ClInclude Include="recursion\testRecurrence.hpp" />
     <ClInclude Include="recursion\testRecursion.hpp" />

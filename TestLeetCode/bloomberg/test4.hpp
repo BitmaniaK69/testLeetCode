@@ -18,49 +18,6 @@ namespace bloomberg
             ListNode(int x, ListNode* next) : val(x), next(next) {}
         };
 
-
-        ListNode* reverseList(ListNode* head) {
-            if (!head || !head->next) return head;
-            ListNode* p = reverseList(head->next);
-            head->next->next = head;
-            head->next = nullptr;
-            return p;
-        }
-        /*
-         class Solution {
-public:
-    ListNode* reverseList(ListNode* head) {
-            if (!head || !head->next) return head;
-            ListNode* p = reverseList(head->next);
-            head->next->next = head;
-            head->next = nullptr;
-            return p;
-        }
-ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-            ListNode* res= nullptr;
-            ListNode* base = nullptr;
-            int carry = 0;
-            ListNode* digit = nullptr;
-            while  (l1 ||l2 || carry)
-            {
-                int tot = ((l1) ? l1->val : 0) + ((l2) ? l2->val : 0) + carry;
-                carry = 0;
-
-                if (tot >= 10)
-                {
-                    carry = tot / 10;
-                    tot %= 10;
-                };
-
-                digit = new ListNode(tot, digit);
-
-                l1 = l1 ? l1->next : nullptr;
-                l2 = l2 ? l2->next : nullptr;
-            }
-            return  reverseList(digit);
-        }
-};
-         */
         ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
             ListNode* base = nullptr;
             ListNode* digit = nullptr;

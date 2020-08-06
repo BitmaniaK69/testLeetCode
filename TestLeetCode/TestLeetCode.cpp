@@ -16,6 +16,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include "bloomberg/test2.hpp"
 #include "bloomberg/test3.hpp"
 #include "bloomberg/test4.hpp"
+#include "bloomberg/test5.hpp"
 
 
 #include "recursion/testMemoization.hpp"
@@ -94,21 +95,30 @@ auto main() -> int
     //test_memoization::test_climbingstairs::test_climbStairs();
 
 
-
+     //------------------
+    // Test Array2
+    //------------------
     // test_array::test_array::test_sortRotate();
     // test_array::test_intersect();
     // test_array::test_twoSum();
     // test_array::test_sudoku();
-    //test_array::test_rotate();
+    // test_array::test_rotate();
 
+
+    //------------------
+    // August Challenge
+    //------------------
     //august_week1::test1::test_logger();
     //august_week1::test2::test_capital();
 
-
+    //------------------
+    // Test Bloomberg
+    //------------------
    // bloomberg::test1::test_LongestSubstring();
    // bloomberg::test2::test_threeSum();
    // bloomberg::test3::test_isAnagram();
-    bloomberg::test4::test_addTwoNumbers2();
+   // bloomberg::test4::test_addTwoNumbers2();
+      bloomberg::test5::test_isValidBST();
     return end();
 }
 

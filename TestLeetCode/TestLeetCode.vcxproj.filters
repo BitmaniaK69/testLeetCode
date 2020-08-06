@@ -101,5 +101,8 @@
     <ClInclude Include="bloomberg\test4.hpp">
       <Filter>Header Files\bloomberg</Filter>
     </ClInclude>
+    <ClInclude Include="bloomberg\test5.hpp">
+      <Filter>Header Files\bloomberg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
