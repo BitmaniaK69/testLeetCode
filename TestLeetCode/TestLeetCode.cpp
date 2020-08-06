@@ -9,10 +9,18 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include "array/testArray.hpp"
 
+#include "august/week1/test1.hpp"
+#include "august/week1/test2.hpp"
+
+#include "bloomberg/test1.hpp"
+#include "bloomberg/test2.hpp"
+#include "bloomberg/test3.hpp"
+#include "bloomberg/test4.hpp"
+
 
 #include "recursion/testMemoization.hpp"
 #include "recursion/testRecurrence.hpp"
-#include "recursion/testrecursion.hpp"
+#include "recursion/testRecursion.hpp"
 #include "week1/test1-1.hpp"
 #include "week1/test1-2.hpp"
 #include "week1/test1-3.hpp"
@@ -91,8 +99,16 @@ auto main() -> int
     // test_array::test_intersect();
     // test_array::test_twoSum();
     // test_array::test_sudoku();
-    test_array::test_rotate();
+    //test_array::test_rotate();
 
+    //august_week1::test1::test_logger();
+    //august_week1::test2::test_capital();
+
+
+   // bloomberg::test1::test_LongestSubstring();
+   // bloomberg::test2::test_threeSum();
+   // bloomberg::test3::test_isAnagram();
+    bloomberg::test4::test_addTwoNumbers2();
     return end();
 }
 

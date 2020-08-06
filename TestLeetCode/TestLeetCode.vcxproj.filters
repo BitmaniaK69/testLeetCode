@@ -25,6 +25,15 @@
     <Filter Include="Header Files\recursion">
       <UniqueIdentifier>{fb7537f4-ad20-408f-ba70-e22abf5b941d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\august">
+      <UniqueIdentifier>{d4b7e095-ad94-45d1-a43c-4b1369ddcd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\august\week1">
+      <UniqueIdentifier>{43f11179-7fb1-499d-a4ce-1b2fd9f15aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bloomberg">
+      <UniqueIdentifier>{9c7eb682-9c41-4413-89bf-899bcc15dfad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestLeetCode.cpp">
@@ -73,6 +82,24 @@
     </ClInclude>
     <ClInclude Include="recursion\testMemoization.hpp">
       <Filter>Header Files\recursion</Filter>
+    </ClInclude>
+    <ClInclude Include="august\week1\test1.hpp">
+      <Filter>Header Files\august\week1</Filter>
+    </ClInclude>
+    <ClInclude Include="august\week1\test2.hpp">
+      <Filter>Header Files\august\week1</Filter>
+    </ClInclude>
+    <ClInclude Include="bloomberg\test1.hpp">
+      <Filter>Header Files\bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="bloomberg\test2.hpp">
+      <Filter>Header Files\bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="bloomberg\test3.hpp">
+      <Filter>Header Files\bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="bloomberg\test4.hpp">
+      <Filter>Header Files\bloomberg</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

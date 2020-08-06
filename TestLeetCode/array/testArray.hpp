@@ -530,8 +530,8 @@ namespace test_array
 
 
     void rotate(vector<vector<int>>& matrix) {
-        const int n = matrix.size();
-               
+        const int n = static_cast<int>(matrix.size());
+
         for (int r = 0; r < n; r++)
         {
             for (int c = r; c < n; c++)
@@ -546,7 +546,7 @@ namespace test_array
         const int s1 = n - 1;
         for (int r = 0; r < n; r++)
         {
-            for (int c = 0; c < n/2; c++)
+            for (int c = 0; c < n / 2; c++)
             {
                 std::swap(matrix[r][s1 - c], matrix[r][c]);
                 /*int temp = matrix[r][s1 - c];
@@ -554,7 +554,7 @@ namespace test_array
                 matrix[r][c] = temp;*/
             }
         }
-        
+
     }
     void test_rotate()
     {
@@ -567,7 +567,7 @@ namespace test_array
         };
 
         cout << "Before" << endl;
-        const int n = matrix.size();
+        const int n = static_cast<int>(matrix.size());
         for (int r = 0; r < n; r++)
         {
             for (int c = 0; c < n; c++)
@@ -579,7 +579,7 @@ namespace test_array
 
         cout << "After" << endl;
         rotate(matrix);
-        const int n2 = matrix.size();
+        const int n2 = static_cast<int>(matrix.size());
         for (int r = 0; r < n2; r++)
         {
             for (int c = 0; c < n2; c++)
