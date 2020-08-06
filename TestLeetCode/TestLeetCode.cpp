@@ -83,7 +83,15 @@ auto main() -> int
     // Test Memoization
     //------------------
     //test_memoization::test_fibonacci::test_fibonacci();
-    test_memoization::test_climbingstairs::test_climbStairs();
+    //test_memoization::test_climbingstairs::test_climbStairs();
+
+
+
+    // test_array::test_array::test_sortRotate();
+    // test_array::test_intersect();
+    // test_array::test_twoSum();
+    // test_array::test_sudoku();
+    test_array::test_rotate();
 
     return end();
 }

@@ -35,14 +35,32 @@ namespace test_memoization
         }
     }
 
+    //-------------------------------------------------------------------------
     //Climbing Stairs
 
     namespace test_climbingstairs
     {
         class Solution {
         public:
+            unordered_map<int, int> cache;
             int climbStairs(int n) {
-                return 0;
+                return climb_Stairs(0, n);
+            }
+
+            int climb_Stairs(int i, int n) {
+                if (i > n) {
+                    return 0;
+                }
+                if (i == n) {
+                    return 1;
+                }
+                if (cache.find(i) != cache.end())
+                {
+                    return cache[i];
+                }
+                const int val = climb_Stairs(i + 1, n) + climb_Stairs(i + 2, n);
+                cache[i] = val;
+                return val;
             }
         };
 
@@ -51,6 +69,7 @@ namespace test_memoization
             Solution sol;
             cout << sol.climbStairs(2) << endl;
             cout << sol.climbStairs(3) << endl;
+            cout << sol.climbStairs(4) << endl;
         }
     }
 };
