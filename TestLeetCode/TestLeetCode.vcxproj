@@ -162,9 +162,12 @@
     <ClInclude Include="bloomberg\test3.hpp" />
     <ClInclude Include="bloomberg\test4.hpp" />
     <ClInclude Include="bloomberg\test5.hpp" />
+    <ClInclude Include="design\testDesign.hpp" />
     <ClInclude Include="recursion\testMemoization.hpp" />
     <ClInclude Include="recursion\testRecurrence.hpp" />
     <ClInclude Include="recursion\testRecursion.hpp" />
+    <ClInclude Include="testbench\testbench1.hpp" />
+    <ClInclude Include="trees\testTrees.hpp" />
     <ClInclude Include="week1\test1-1.hpp" />
     <ClInclude Include="week1\test1-2.hpp" />
     <ClInclude Include="week1\test1-3.hpp" />

@@ -7,21 +7,6 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 #include <iostream>
 
-#include "array/testArray.hpp"
-
-#include "august/week1/test1.hpp"
-#include "august/week1/test2.hpp"
-
-#include "bloomberg/test1.hpp"
-#include "bloomberg/test2.hpp"
-#include "bloomberg/test3.hpp"
-#include "bloomberg/test4.hpp"
-#include "bloomberg/test5.hpp"
-
-
-#include "recursion/testMemoization.hpp"
-#include "recursion/testRecurrence.hpp"
-#include "recursion/testRecursion.hpp"
 #include "week1/test1-1.hpp"
 #include "week1/test1-2.hpp"
 #include "week1/test1-3.hpp"
@@ -32,6 +17,25 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include "week2/test2-3.hpp"
 #include "week2/test2-4.hpp"
 #include "week2/test2-5.hpp"
+#include "august/week1/test1.hpp"
+#include "august/week1/test2.hpp"
+
+#include "bloomberg/test1.hpp"
+#include "bloomberg/test2.hpp"
+#include "bloomberg/test3.hpp"
+#include "bloomberg/test4.hpp"
+#include "bloomberg/test5.hpp"
+
+#include "design/testDesign.hpp"
+
+
+#include "recursion/testMemoization.hpp"
+#include "recursion/testRecurrence.hpp"
+#include "recursion/testRecursion.hpp"
+
+#include "testbench/testbench1.hpp"
+#include "arrays/testArray.hpp"
+
 
 using namespace std;
 
@@ -94,7 +98,6 @@ auto main() -> int
     //test_memoization::test_fibonacci::test_fibonacci();
     //test_memoization::test_climbingstairs::test_climbStairs();
 
-
      //------------------
     // Test Array2
     //------------------
@@ -103,7 +106,6 @@ auto main() -> int
     // test_array::test_twoSum();
     // test_array::test_sudoku();
     // test_array::test_rotate();
-
 
     //------------------
     // August Challenge
@@ -118,7 +120,18 @@ auto main() -> int
    // bloomberg::test2::test_threeSum();
    // bloomberg::test3::test_isAnagram();
    // bloomberg::test4::test_addTwoNumbers2();
-      bloomberg::test5::test_isValidBST();
+    bloomberg::test5::test_isValidBST();    //Not finished yet
+    
+    //------------------
+    // Generic tests
+    //------------------
+    //testbench::test1();
+
+    //------------------
+    // Test Design
+    //------------------
+   // test_design::test_shuffle();
+
     return end();
 }
 

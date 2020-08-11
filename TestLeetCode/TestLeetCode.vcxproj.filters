@@ -34,6 +34,15 @@
     <Filter Include="Header Files\bloomberg">
       <UniqueIdentifier>{9c7eb682-9c41-4413-89bf-899bcc15dfad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\testbench">
+      <UniqueIdentifier>{19eba42e-3f14-4475-bb42-5f4042aa50b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\design">
+      <UniqueIdentifier>{1f44d8d4-ffac-494b-bae1-21f0f1d8cd3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\trees">
+      <UniqueIdentifier>{aee0ca30-b5ac-4706-b470-51344988091a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestLeetCode.cpp">
@@ -103,6 +112,15 @@
     </ClInclude>
     <ClInclude Include="bloomberg\test5.hpp">
       <Filter>Header Files\bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="testbench\testbench1.hpp">
+      <Filter>Header Files\testbench</Filter>
+    </ClInclude>
+    <ClInclude Include="design\testDesign.hpp">
+      <Filter>Header Files\design</Filter>
+    </ClInclude>
+    <ClInclude Include="trees\testTrees.hpp">
+      <Filter>Header Files\trees</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
