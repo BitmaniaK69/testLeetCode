@@ -43,6 +43,9 @@
     <Filter Include="Header Files\trees">
       <UniqueIdentifier>{aee0ca30-b5ac-4706-b470-51344988091a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\criterion">
+      <UniqueIdentifier>{775fceff-4cbf-4974-a64e-51bd2bad1a65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestLeetCode.cpp">
@@ -121,6 +124,15 @@
     </ClInclude>
     <ClInclude Include="trees\testTrees.hpp">
       <Filter>Header Files\trees</Filter>
+    </ClInclude>
+    <ClInclude Include="criterion\testcriterion1.hpp">
+      <Filter>Header Files\criterion</Filter>
+    </ClInclude>
+    <ClInclude Include="criterion\testcriterion2.hpp">
+      <Filter>Header Files\criterion</Filter>
+    </ClInclude>
+    <ClInclude Include="testbench\testbench2.hpp">
+      <Filter>Header Files\testbench</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

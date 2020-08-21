@@ -36,6 +36,10 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include "testbench/testbench1.hpp"
 #include "arrays/testArray.hpp"
 
+#include "criterion/testcriterion1.hpp"
+#include "criterion/testcriterion2.hpp"
+
+#include "testbench/testbench2.hpp"
 
 using namespace std;
 
@@ -120,18 +124,26 @@ auto main() -> int
    // bloomberg::test2::test_threeSum();
    // bloomberg::test3::test_isAnagram();
    // bloomberg::test4::test_addTwoNumbers2();
-    bloomberg::test5::test_isValidBST();    //Not finished yet
+   // bloomberg::test5::test_isValidBST();    
     
     //------------------
     // Generic tests
     //------------------
     //testbench::test1();
+    testbench2::test_main();
+
 
     //------------------
     // Test Design
     //------------------
    // test_design::test_shuffle();
 
+
+    //------------------
+    // Test Criterion
+    //------------------
+    //test_criterion1::test_luckyNumber();
+    //test_criterion2::test_isNearPalindrome();
     return end();
 }
 
